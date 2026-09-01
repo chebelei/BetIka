@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Betika Demo</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#061326;color:#fff}
+header{background:#07182c;border-bottom:1px solid #29415f;padding:15px 5%;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:25px;font-weight:900}.logo b{color:#ffd000}.demo{background:#ffd000;color:#071326;padding:4px 7px;border-radius:4px;font-size:13px;margin-left:5px}
+nav a{color:#e7edf5;text-decoration:none;margin:0 10px;font-size:14px}.hero{padding:70px 5%;background:linear-gradient(110deg,#071a31,#092a4a);display:flex;justify-content:space-between;gap:30px}
+.hero div{max-width:650px}h1{font-size:clamp(42px,7vw,76px);margin:0 0 15px}h1 span{color:#ffd000}.hero p{font-size:18px;color:#c5d1df;line-height:1.7}
+button{background:#ffd000;border:0;padding:14px 22px;border-radius:7px;font-weight:800;font-size:15px;cursor:pointer}.outline{background:transparent;color:#fff;border:1px solid #ffd000;margin-left:10px}
+.notice{margin:25px 5%;padding:16px;border:1px solid #ffd000;border-radius:8px;background:#0b2039;color:#dce6f2;text-align:center}
+section{padding:45px 5%;max-width:1250px;margin:auto}h2{font-size:30px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#0c2039;border:1px solid #203d5e;border-radius:10px;padding:20px}.card h3{margin-top:5px}.card p{color:#b8c7d7}.odds{display:flex;gap:8px;margin-top:15px}.odd{flex:1;background:#122d4b;padding:12px;text-align:center;border-radius:6px;color:#ffd000;font-weight:bold}.tag{display:inline-block;background:#e52d2d;padding:4px 7px;border-radius:4px;font-size:11px}
+footer{background:#04101f;padding:35px 5%;color:#9eafc2;text-align:center;margin-top:30px}
+@media(max-width:750px){nav{display:none}.hero{padding:45px 5%}.cards{grid-template-columns:1fr}}
+</style></head>
+<body>
+<header><div class="logo">Betika!<span class="demo">DEMO</span></div><nav><a href="#home">Home</a><a href="#sports">Sports</a><a href="#events">Events</a><a href="#about">About</a></nav><button onclick="demo()">Try Demo</button></header>
+<main id="home">
+<div class="hero"><div><h1>BETIKA <span>DEMO</span></h1><h2>Practice. Learn. Play Responsibly.</h2><p>A demonstration sports-betting interface created for learning and design purposes. No real-money betting, deposits or withdrawals are available.</p><button onclick="demo()">Try Demo Now →</button><button class="outline" onclick="document.querySelector('#about').scrollIntoView()">Learn More</button></div></div>
+<div class="notice">⚠️ <b>DEMO ONLY:</b> All events and odds shown are illustrative. This website does not accept real money.</div>
+<section id="sports"><h2>Popular Sports</h2><div class="cards">
+<div class="card"><h3>⚽ Football</h3><p>Explore football match examples and learn how odds are displayed.</p></div>
+<div class="card"><h3>🏀 Basketball</h3><p>Practice reading markets in a simulated environment.</p></div>
+<div class="card"><h3>🎾 Tennis</h3><p>Learn common tennis market terminology.</p></div>
+</div></section>
+<section id="events"><h2>Demo Events</h2><div class="cards">
+<div class="card"><span class="tag">DEMO</span><h3>Manchester United vs Arsenal</h3><p>Example match • Not a live event</p><div class="odds"><div class="odd">1<br>2.45</div><div class="odd">X<br>3.40</div><div class="odd">2<br>2.80</div></div></div>
+<div class="card"><span class="tag">DEMO</span><h3>Real Madrid vs Barcelona</h3><p>Example match • Not a live event</p><div class="odds"><div class="odd">1<br>2.10</div><div class="odd">X<br>3.60</div><div class="odd">2<br>3.10</div></div></div>
+<div class="card"><span class="tag">DEMO</span><h3>Lakers vs Celtics</h3><p>Example match • Not a live event</p><div class="odds"><div class="odd">1<br>1.70</div><div class="odd">X<br>—</div><div class="odd">2<br>2.20</div></div></div>
+</div></section>
+<section id="about"><h2>About This Demo</h2><div class="card"><p>This is a fictional demonstration website for practicing web design and user-interface development. It is not affiliated with or operated by Betika, and it has no real betting, payment, account or withdrawal functionality.</p></div></section>
+</main>
+<footer>© 2026 Betika Demo • Educational / UI demonstration only</footer>
+<script>function demo(){alert("Demo mode: no real-money betting is available.");}</script>
+</body></html>
